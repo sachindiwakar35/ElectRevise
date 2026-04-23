@@ -1,0 +1,251 @@
+/* MAIN CONTAINER */
+.insert-container {
+  min-height: 100vh;
+  background: #f3f4f6;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  color: #222;
+}
+
+/* HEADER */
+.insert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.insert-header h1 {
+  margin: 0;
+  color: #e65100;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+/* BUTTON STYLES */
+.refresh-all,
+.logout-btn,
+.download-btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.section-description {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.master-download {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.master-download:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+  transform: translateY(-2px);
+}
+
+.data-section {
+  margin: 25px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.refresh-all {
+  background: #fb8c00;
+  color: white;
+}
+
+.refresh-all:hover {
+  background: #e67c00;
+}
+
+.logout-btn {
+  background: #e53935;
+  color: white;
+}
+
+.logout-btn:hover {
+  background: #c62828;
+}
+
+.download-btn {
+  margin-top: 15px;
+  background: #1565c0;
+  color: white;
+  width: 200px;
+}
+
+.download-btn:hover {
+  background: #0d47a1;
+}
+
+/* STATS SECTION */
+.stats-section {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 28px 20px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.stat-card h3 {
+  font-size: 13px;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.stat-card.orange {
+  border-top: 5px solid #ff9800;
+}
+
+.stat-card.green {
+  border-top: 5px solid #4caf50;
+}
+
+/* Add to Insert.css */
+
+/* Jilla download button specific style */
+.jilla-download {
+  background: linear-gradient(135deg, #2196F3, #1976D2);
+  border: 2px solid #1565C0;
+}
+
+.jilla-download:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1976D2, #0D47A1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(33, 150, 243, 0.3);
+}
+
+.jilla-download:disabled {
+  background: #90CAF9;
+  border-color: #BBDEFB;
+  cursor: not-allowed;
+}
+
+/* Master download button color (keep existing but add specificity) */
+.master-download {
+  background: linear-gradient(135deg, #9C27B0, #7B1FA2);
+  border: 2px solid #6A1B9A;
+}
+
+.master-download:hover:not(:disabled) {
+  background: linear-gradient(135deg, #7B1FA2, #4A148C);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(156, 39, 176, 0.3);
+}
+
+/* Adjust spacing between sections if needed */
+.data-section {
+  margin-bottom: 30px;
+}
+
+.data-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.section-description {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+/* DOWNLOAD SECTION */
+.data-section {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  margin-top: 35px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+}
+
+.data-section h2 {
+  font-size: 1.5rem;
+  color: #e65100;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* DROPDOWN */
+.table-dropdown {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #ddd;
+  font-size: 15px;
+  background: #fafafa;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.table-dropdown:hover {
+  border-color: #bbb;
+}
+
+.table-dropdown:focus {
+  border-color: #ff9800;
+  background: #fff7e8;
+}
+
+/* FOOTER */
+.insert-footer {
+  text-align: center;
+  margin-top: 35px;
+  padding: 12px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* MOBILE FRIENDLY */
+@media (max-width: 768px) {
+  .insert-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .download-btn {
+    width: 100%;
+  }
+
+  .table-dropdown {
+    width: 100%;
+  }
+}

@@ -1,0 +1,158 @@
+/* ------------------- Container ------------------- */
+.select-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(255, 153, 51, 0.2);
+  border: 2px solid #ff9933;
+  font-family: Arial, sans-serif;
+}
+
+.select-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff9933, #138808, #000080);
+  border-radius: 15px 15px 0 0;
+}
+
+/* ------------------- Header ------------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ff9933;
+}
+
+.header h2 {
+  color: #ff9933;
+  margin: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ------------------- Logout Button ------------------- */
+.logout-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff9933, #e68a00);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px rgba(255, 153, 51, 0.3);
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #e68a00, #cc7a00);
+  box-shadow: 0 6px 12px rgba(255, 153, 51, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ------------------- Labels ------------------- */
+.select-container label {
+  display: block;
+  margin: 20px 0 8px 0;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+
+/* ------------------- Select Dropdowns ------------------- */
+.select-container select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 10px;
+}
+
+.select-container select:focus {
+  border-color: #ff9933;
+  box-shadow: 0 0 8px rgba(255, 153, 51, 0.3);
+  outline: none;
+}
+
+.select-container select:hover {
+  border-color: #ff9933;
+}
+
+/* ------------------- Submit Button ------------------- */
+.select-container button[type="button"] {
+  width: 100%;
+  padding: 15px;
+  margin-top: 25px;
+  background: linear-gradient(135deg, #ff9933, #e68a00);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 6px 12px rgba(255, 153, 51, 0.3);
+}
+
+.select-container button[type="button"]:hover {
+  background: linear-gradient(135deg, #e68a00, #cc7a00);
+  box-shadow: 0 8px 16px rgba(255, 153, 51, 0.4);
+  transform: translateY(-3px);
+}
+
+.select-container button[type="button"]:active {
+  transform: translateY(-1px);
+}
+
+/* ------------------- Responsive Design ------------------- */
+@media (max-width: 600px) {
+  .select-container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .header h2 {
+    font-size: 20px;
+  }
+  
+  .select-container select {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .select-container button[type="button"] {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/* ------------------- Option Styling ------------------- */
+.select-container option {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.select-container option:hover {
+  background: #ff9933;
+  color: white;
+}

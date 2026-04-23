@@ -1,0 +1,139 @@
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+  width: 230px;
+  background: #ff6f00;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-header h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Menu items */
+.sidebar-menu {
+  list-style: none;
+  position: static;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 0.8rem 1rem;
+  margin: 0.4rem 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar-menu li:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Footer */
+.sidebar-footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.sidebar-footer button {
+  background-color: white;
+  color: #ff6f00;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sidebar-footer button:hover {
+  background-color: #fff3e0;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  overflow-y: auto;
+  width: 100%;
+}
+
+/* Mobile header */
+.mobile-header {
+  display: none;
+  background: #ff6f00;
+  color: white;
+  padding: 0.8rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .close-btn {
+    display: inline;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .mobile-header {
+    display: flex;
+  }
+}

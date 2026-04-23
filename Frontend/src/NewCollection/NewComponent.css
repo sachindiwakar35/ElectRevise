@@ -1,0 +1,150 @@
+.voter-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.back-btn {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  background: #ff9933;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.voter-table-form-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Table */
+.voter-table-wrapper {
+  flex: 1;
+  transition: flex 0.3s ease;
+}
+
+.voter-table-wrapper.shrink {
+  flex: 0.6;
+}
+
+.selection-info p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 10px;
+  max-height: 500px;
+}
+
+.voter-table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+}
+
+.voter-table th,
+.voter-table td {
+  border: 1px solid #ff9933;
+  padding: 8px;
+  text-align: left;
+}
+
+.voter-table th {
+  background: #ff9933;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.voter-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.voter-table tr:hover {
+  background-color: #fff3e0;
+}
+
+/* Form */
+.voter-form {
+  flex: 0.35;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ff9933;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(255,153,51,0.2);
+}
+
+.voter-form h3 {
+  margin-top: 0;
+  color: #ff9933;
+  text-transform: uppercase;
+}
+
+.voter-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.voter-form input,
+.voter-form select,
+.voter-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+
+.voter-form input:focus,
+.voter-form select:focus,
+.voter-form textarea:focus {
+  border-color: #ff9933;
+  outline: none;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.voter-form button[type="submit"] {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.voter-form button[type="submit"]:hover {
+  background: #218838;
+}
+
+.voter-form button[type="button"] {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.voter-form button[type="button"]:hover {
+  background: #c82333;
+}

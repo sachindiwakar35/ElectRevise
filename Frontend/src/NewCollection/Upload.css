@@ -1,0 +1,312 @@
+/* -------------------------------
+   CARD CONTAINER
+--------------------------------*/
+.bjp-card {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+#upload-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* -------------------------------
+   FILE INPUT SECTION
+--------------------------------*/
+.bjp-file-wrap {
+  border: 2px dashed #ff8800;
+  padding: 25px;
+  border-radius: 10px;
+  background: #fff7e6;
+  cursor: pointer;
+}
+
+.bjp-file-input {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* -------------------------------
+   BUTTON STYLING
+--------------------------------*/
+.delete-button {
+  width: 50%;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  background-color: #cc0000;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.delete-button:hover {
+  background-color: #fe3131;
+}
+.bjp-button {
+  width: 100%;
+  padding: 12px 18px;
+  margin-top: 15px;
+  background-color: #ff8800;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.bjp-button:hover {
+  background-color: #e67300;
+}
+.bjp-button:disabled {
+  background-color: #b3b3b3;
+  cursor: not-allowed;
+}
+/* -------------------------------
+   MESSAGES
+--------------------------------*/
+.bjp-message {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.bjp-message.success {
+  background: #e8ffe8;
+  color: #008f00;
+}
+.bjp-message.error {
+  background: #ffe8e8;
+  color: #cc0000;
+}
+.bjp-message.warn {
+  background: #fff5d9;
+  color: #cc7a00;
+}
+/* -------------------------------
+   UPLOADED FILE LIST
+--------------------------------*/
+.uploaded-file-list {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.uploaded-file-list h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.uploaded-file-list ul {
+  padding-left: 15px;
+}
+
+.uploaded-file-list li {
+  background: #fafafa;
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  border-left: 4px solid #ff8800;
+  font-size: 14px;
+}
+
+/* -------------------------------
+   RESPONSIVE DESIGN
+--------------------------------*/
+@media (max-width: 768px) {
+  .bjp-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #upload-heading {
+    font-size: 20px;
+  }
+
+  .bjp-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bjp-card {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .bjp-file-wrap {
+    padding: 18px;
+  }
+
+  .uploaded-file-list li {
+    font-size: 13px;
+  }
+}
+
+
+\.bjp-card {
+  position: relative;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bjp-badge {
+  background: #ff9933;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bjp-select {
+  padding: 8px 12px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.bjp-button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.bjp-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.bjp-button:hover:not(:disabled) {
+  background: #0052a3;
+}
+
+.delete-button {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 10px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.delete-button:hover:not(:disabled) {
+  background: #cc0000;
+}
+
+.bjp-message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  background: #f8f9fa;
+  border-left: 4px solid #0066cc;
+}
+
+.uploaded-file-list {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.uploaded-file-list h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.uploaded-file-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.uploaded-file-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.uploaded-file-list li:last-child {
+  border-bottom: none;
+}
+
+/* Loading Overlay Styles */
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #0066cc;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Disabled input style */
+input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+select:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

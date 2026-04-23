@@ -1,0 +1,97 @@
+.voterdown-container {
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.voterdown-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.voterdown-select {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ffc830;
+  font-size: 16px;
+  background: white;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.voterdown-select:focus {
+  background-color: #ffd35b;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.voterdown-download {
+  margin-top: 20px;
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.voterdown-download:hover {
+  background-color: #ff9848;
+  transform: scale(1.05);
+}
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .voterdown-container {
+    max-width: 90%;
+    padding: 16px;
+  }
+  .voterdown-title {
+    font-size: 20px;
+  }
+  .voterdown-select {
+    width: 100%;
+    font-size: 15px;
+    padding: 9px;
+  }
+  .voterdown-download {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .voterdown-container {
+    margin: 20px auto;
+    padding: 14px;
+    border-radius: 10px;
+  }
+  .voterdown-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .voterdown-select {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .voterdown-download {
+    font-size: 14px;
+    padding: 9px;
+  }
+}
+/* ✅ Small hover/transition for mobile-safe interaction */
+@media (hover: none) {
+  .voterdown-download:hover {
+    transform: none;
+  }
+}

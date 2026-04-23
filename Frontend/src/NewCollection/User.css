@@ -1,0 +1,94 @@
+/* User.css */
+.userbod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.userbod h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.userbod p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.userbod input {
+  width: 300px;
+  max-width: 90%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 15px;
+  color: #0f172a;
+  transition: box-shadow 0.3s ease;
+}
+
+.userbod input:focus {
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.7);
+}
+
+.userbod button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.userbod button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.userbod button:active {
+  transform: translateY(0);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .userbod h1 {
+    font-size: 2rem;
+  }
+
+  .userbod p {
+    font-size: 1rem;
+  }
+
+  .userbod input {
+    width: 250px;
+  }
+
+  .userbod button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .userbod h1 {
+    font-size: 1.8rem;
+  }
+
+  .userbod input {
+    width: 200px;
+    font-size: 0.9rem;
+  }
+
+  .userbod button {
+    font-size: 0.9rem;
+  }
+}

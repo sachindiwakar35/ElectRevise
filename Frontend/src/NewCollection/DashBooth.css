@@ -1,0 +1,513 @@
+/* ===============================
+   🕉️ BJP THEME DASHBOARD STYLES
+   DASHBOOTH COMPONENT
+   =============================== */
+
+.dash-booth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff9933, #ffffff, #138808);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #222;
+}
+.add-family-btn {
+  margin-left: 20px;
+  padding: 8px 14px;
+  background: #fb8761;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+.add-family-btn:hover {
+  transform: translateY(-2px);
+  background: #ff671f;
+  color: white;
+}
+/* ----------- Card ---------- */
+.dash-booth-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  padding: 25px 35px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(255, 153, 51, 0.4);
+  border-top: 6px solid #ff671f;
+  transition: all 0.3s ease;
+}
+
+.dash-booth-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 153, 51, 0.5);
+}
+
+/* ----------- Title & Subtitle ---------- */
+.dash-booth-title {
+  color: #ff671f;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dash-booth-subtitle {
+  color: #444;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+/* ----------- Form ---------- */
+.dash-booth-search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.dash-booth-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dash-booth-label {
+  font-weight: 600;
+  color: "black";
+}
+
+.dash-booth-input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 2px solid #ff671f;
+  outline: none;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.dash-booth-input:focus {
+  border-color: #138808;
+  box-shadow: 0 0 6px rgba(19, 136, 8, 0.5);
+}
+
+/* ----------- Buttons ---------- */
+.dash-booth-button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.dash-booth-search-btn,
+.dash-booth-reset-btn {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.dash-booth-search-btn {
+  background: #ff671f;
+  color: white;
+}
+
+.dash-booth-search-btn:hover {
+  background: #e55c0c;
+}
+
+.dash-booth-reset-btn {
+  background: #138808;
+  color: white;
+}
+
+.dash-booth-reset-btn:hover {
+  background: #0e6b06;
+}
+
+/* ----------- Results Section ---------- */
+.dash-booth-results-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 25px;
+  margin-top: 30px;
+  width: 95%;
+  max-width: 1100px;
+  box-shadow: 0 4px 20px rgba(19, 136, 8, 0.3);
+  border-left: 6px solid #138808;
+  overflow-x: hidden;
+}
+
+.dash-booth-station-title {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.dash-booth-results-count {
+  color: #333;
+  font-weight: 600;
+  margin: 8px 0 20px 0;
+  font-size: 1.1rem;
+}
+
+/* ----------- Section Titles ---------- */
+.dash-booth-section-title {
+  color: #ff671f;
+  font-size: 1.3rem;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #138808;
+  display: inline-block;
+  padding-bottom: 3px;
+  font-weight: 700;
+}
+
+/* ----------- Family Sections ---------- */
+.dash-booth-family-section {
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(255, 153, 51, 0.2);
+  overflow-x: hidden;
+  border: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.dash-booth-family-header {
+  background: #138808;
+  color: #fff;
+  padding: 12px 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border-left: 4px solid #ff671f;
+  transition: background 0.3s ease;
+}
+
+.dash-booth-family-header:hover {
+  background: #0f6d06;
+}
+
+/* ----------- Multi & Single Families Containers ---------- */
+.dash-booth-multi-families,
+.dash-booth-single-families {
+  margin-bottom: 30px;
+}
+
+/* ----------- Improved Table Styling ---------- */
+.dash-booth-results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 1100px; /* Makes wide tables scrollable */
+}
+
+/* Scrollable wrapper */
+.dash-booth-family-section table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Sticky header for better UX */
+.dash-booth-table-header {
+  background: linear-gradient(90deg, #ff671f, #ff9933);
+  color: white;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  text-align: center;
+  padding: 12px 16px;
+  letter-spacing: 0.3px;
+}
+
+/* Table cells */
+.dash-booth-table-cell {
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+  text-align: center;
+  vertical-align: middle;
+  color: #222;
+  background: #fff;
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+/* Alternate rows */
+.dash-booth-table-row:nth-child(even) .dash-booth-table-cell {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect */
+.dash-booth-table-row:hover .dash-booth-table-cell {
+  background-color: rgba(255, 153, 51, 0.15);
+  transition: background 0.2s ease;
+}
+
+/* ----------- Scrollbar ---------- */
+.dash-booth-results-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.dash-booth-results-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(#ff671f, #138808);
+  border-radius: 6px;
+}
+
+/* ----------- Responsive ---------- */
+@media (max-width: 768px) {
+  .dash-booth-container {
+    padding: 20px 10px;
+  }
+
+  .dash-booth-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .dash-booth-results-container {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .dash-booth-results-table {
+    font-size: 0.8rem;
+    min-width: 800px;
+  }
+
+  .dash-booth-table-header,
+  .dash-booth-table-cell {
+    padding: 8px;
+  }
+
+  .dash-booth-title {
+    font-size: 1.5rem;
+  }
+
+  .dash-booth-button-group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .dash-booth-results-table {
+    font-size: 0.75rem;
+    min-width: 700px;
+  }
+
+  .dash-booth-table-header,
+  .dash-booth-table-cell {
+    padding: 6px;
+  }
+
+  .dash-booth-family-header {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+
+.dash-booth-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dash-booth-modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 80%;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+}
+
+.edit-member-card {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.modal-btn-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-btn-group button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-btn-group button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.modal-btn-group button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+.dash-booth-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dash-booth-modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 80%;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+}
+
+.edit-member-card {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input,
+.form-group select {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.modal-btn-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-btn-group button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-btn-group button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.modal-btn-group button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+/* Add New Voter Button Styles */
+.family-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.add-voter-btn {
+  background: #ff671f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.add-voter-btn:hover {
+  background: #dc3545;
+}
+
+/* New Voter Form Styles */
+.family-id-display {
+  background: #f8f9fa;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Modal button groups */
+.modal-btn-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.save-btn {
+  background: #28a745;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #218838;
+}
+
+.close-btn {
+  background: #6c757d;
+  color: white;
+}
+
+.close-btn:hover {
+  background: #545b62;
+}
